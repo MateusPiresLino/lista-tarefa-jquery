@@ -1,0 +1,99 @@
+:root {
+    --cores-header-button: #da9ea1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arimo", sans-serif;
+}
+
+body {
+    background-color: #ffdbde;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+header {
+    background-color: var(--cores-header-button);
+    width: 100%;
+    padding: 10px;
+    margin: 15px auto;
+    text-align: center;
+    border-radius: 10px;
+
+    & h1 {
+        color: #fff;
+        font-size: 32px;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 640px;
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    background-color: #ce8a8d;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 1px;
+    overflow: hidden;
+
+    & #form_list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    & input {
+        max-width: 400px;
+        width: 100%;
+        padding: 6px;
+        border-radius: 4px;
+        border: none;
+        outline: none;
+    }
+
+    & button {
+        padding: 6px;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        cursor: pointer;
+        background-color: var(--cores-header-button);
+        color: #fff;
+        font-style: italic;
+        
+    }
+
+    & ul {
+        list-style: none;
+        width: 100%;
+        max-height: 450px; /* Defina uma altura máxima para a lista */
+        overflow-y: auto; /* Permite rolagem vertical */
+        padding: 0;
+        margin: 0;
+    }
+
+    & li {
+        font-size: 14px;
+        font-weight: 700;
+        background-color: #e7b2b6;
+        border-radius: 6px;
+        padding: 8px;
+        margin: 10px 0;
+        text-transform: uppercase;
+        color: #5d4037;
+        cursor: pointer;
+    }
+
+    /*Função JS jquery*/
+    & .line-through {
+        text-decoration: line-through;
+    }
+}
